@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  memcached:
+    image: memcached:latest
+    container_name: memcached_betsApp
+    ports:
+      - "${MEMCACHED_PORT}:11211"
+    restart: always
