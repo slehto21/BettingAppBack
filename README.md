@@ -1,0 +1,1 @@
+# Memcached service for mobile app
