@@ -6,7 +6,6 @@ const router = express.Router();
 
 router.get('/', async (request, response) => {
     try {
-        console.log('Fetching fixtures');
         const fixtures = await getCachedData('fixtures');
         response.send(fixtures);
     } catch (error) {
